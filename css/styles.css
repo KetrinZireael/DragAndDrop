@@ -6,7 +6,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #e5e5e5;
+  background-image: url(/img/isaac-martin-LGaWh1Ff4qo-unsplash.jpg);
+  background-size: cover;
   display: flex;
   padding-top: 5rem;
   justify-content: center;
@@ -44,6 +45,12 @@ body {
 
 .item:active {
   cursor: grabbing;
+  transform: rotate3d(1, 2, 3, 10deg);
+}
+
+.item:hover {
+  background-color: #d8d4d4;
+  color: black;
 }
 
 .placeholder {
@@ -64,7 +71,8 @@ body {
 }
 
 .hold {
-  border: 5px solid #eee;
+  border: 5px solid rgb(88, 88, 88);
+  transform: rotate3d(1, 2, 3, 10deg);
 }
 
 .hide {
@@ -72,5 +80,7 @@ body {
 }
 
 .hovered {
-  border-top: 2px solid #8ed7ed;
+  border: 2px solid #8cf582;
+  background: rgb(180, 180, 180);
+  border-radius: 20px;
 }
